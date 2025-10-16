@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Medieval Sharp Regular';
+    src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf);
+}
+
+@font-face {
+    font-family: '';
+    src: url();
+}
+
+* {
+    box-sizing: border-box;
+}
+
