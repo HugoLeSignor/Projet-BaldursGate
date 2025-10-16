@@ -1,14 +1,146 @@
 @font-face {
-    font-family: 'Medieval Sharp Regular';
+    font-family: 'MedievalSharp Regular';
     src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf);
 }
 
 @font-face {
-    font-family: '';
-    src: url();
+    font-family: 'Gothic Regular';
+    src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gothic Bold';
+    src: url(../fonts/Gothic_A1/GothicA1-Bold.ttf);
 }
 
 * {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 auto;
+    background-image: url(../img/smoke-bg.jpg);
+    background-attachment: fixed;
+    font-family: 'MedievalSharp Regular', 'Gothic Regular', 'Gothic Bold';
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* section header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    overflow: visible;
+}
+
+.header__container {
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.header__logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    height: 90px;
+    width: auto;
+}
+
+.header__nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    position: relative;
+}
+
+.header__nav-link {
+    color: #F4E4C1;
+    text-decoration: none;
+    font-family: 'MedievalSharp Regular';
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+
+.header__nav-link--cta {
+    background: #F4E4C1;
+    color: #000000;
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* section hero  */
+
+.hero {
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+.hero__content {
+    margin-bottom: 5em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__title {
+    color: #F4E4C1;
+    font-size: 2.5rem;
+}
+
+.hero__btn {
+    background-color: #0b0d1579;
+    backdrop-filter: blur(30px);
+    border: solid 1px #F4E4C1;
+    padding: 0.4em 0.7em;
+    border-radius: 0.2em;
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
