@@ -88,10 +88,15 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 90px;
+    background-image: url(../img/cloud-header.png);
+    background-position: right;
+    background-size: 100dvh;
+    background-repeat: no-repeat;
 }
 
 .header__container::after {
     transform: rotate(90deg);
+
 }
 
 .header__logo {
@@ -194,11 +199,11 @@ body {
 }
 
 .award__container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     position: relative;
     z-index: 1;
     border: 2px solid var(--color-accent);
@@ -207,7 +212,8 @@ body {
     background-image: url(../img/awards-bg.png);
     background-size: cover;
     background-position: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .award__titlebox {
@@ -236,7 +242,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: nowrap;
 }
 
@@ -262,10 +268,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 3em 0em;
 }
 
 .race__title {
     display: flex;
+    margin: 0;
     justify-content: flex-start;
     font-size: 2.5rem;
     text-align: justify;
@@ -277,20 +285,18 @@ body {
 
 .race__title-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 30px;
 }
 
 .race__container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 45% 55%;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
-    height: 100%;
-    align-items: stretch;
 }
 
 .race__left {
@@ -299,9 +305,9 @@ body {
     background-position: center;
     border: 1px solid var(--color-accent);
     border-radius: var(--radius-md);
-    padding: 3em 1.5em;
+    padding: 3em 2.5em;
     backdrop-filter: blur(10px);
-    width: 50%;
+    width: 100%;
 }
 
 .race__grid {
@@ -320,8 +326,8 @@ body {
 }
 
 .race__img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 
@@ -347,24 +353,24 @@ body {
 .race__detail {
     text-align: center;
     max-width: 650px;
+    padding-bottom: 3em;
     border-bottom: 2px solid var(--color-accent);
 }
 
 .race__detail-icon {
-    margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
 
 .race__detail-img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .race__detail-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--color-accent);
-    margin-bottom: 30px;
+    margin: 1em 0 0;
     font-weight: 400;
     letter-spacing: 3px;
     position: relative;
@@ -373,8 +379,8 @@ body {
 
 .race__detail--line {
     position: relative;
-    border-bottom: solid 3px rgb(221, 201, 167);
-    width: 50%;
+    border-bottom: solid 1px rgb(221, 201, 167);
+    width: 40%;
     margin: 0 auto;
 
 }
@@ -382,16 +388,17 @@ body {
 .race__detail--line::before {
     content: url(../svg/decoration-line--before.svg);
     position: absolute;
-    left: -20px;
+    left: -10px;
     top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    transform: translateY(-77%);
+    width: 10px;
+    height: 10px;
     display: block;
 }
 
 .race__detail-text {
-    font-size: 1.2rem;
+    font-family: 'Gothic Regular', sans-serif;
+    font-size: 1rem;
     line-height: 1.9;
     color: var(--color-accent);
     font-weight: 300;
@@ -399,3 +406,55 @@ body {
     padding-top: 30px;
 
 }
+
+/* section buy */
+
+.buy {
+    background-image: url(../img/buy-now-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.buy__container {
+    display: flex;
+    padding: 4em 10em;
+}
+
+.buy__content {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.buy__title {
+    color: var(--color-accent);
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0;
+}
+
+.buy__subtitle {
+    font-family: 'Gothic Regular', sans-serif;
+    margin: 0 0 0.5em;
+}
+
+.buy__description {
+    font-family: 'Gothic Regular', sans-serif;
+}
+
+.buy__buttons {
+    margin: 2em 0;
+}
+
+.buy__btn {
+    text-decoration: none;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-lg);
+    padding: 0.3em 0.7em;
+    background-color: #0b0d1579;
+    color: var(--color-text);
+    font-size: 1.5em;
+}
+
