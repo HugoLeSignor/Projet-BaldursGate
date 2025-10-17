@@ -247,8 +247,8 @@ body {
 }
 
 .header__burger-line {
-    width: 1.875rem;
-    height: 0.1875rem;
+    width: 1.9rem;
+    height: 0.19rem;
     background-color: var(--color-accent);
     border-radius: 2px;
 }
@@ -261,7 +261,7 @@ body {
 
     .header__nav {
         position: fixed;
-        top: 5.625rem;
+        top: 5.7rem;
         right: -100%;
         width: 100%;
         z-index: 999;
