@@ -181,10 +181,6 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 5.625rem;
-    background-image: url(../img/cloud-header.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 40% 5vh;
 }
 
 .header__logo {
@@ -239,6 +235,37 @@ body {
 .header__nav-link--cta:hover {
     background-color: #0b0d1579;
     color: var(--color-text);
+}
+
+/* Menu burger */
+.header__burger {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.header__burger-line {
+    width: 1.875rem;
+    height: 0.1875rem;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    .header__burger {
+        display: flex;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 5.625rem;
+        right: -100%;
+        width: 100%;
+        z-index: 999;
+    }
 }
 
 /* section hero  */
