@@ -1,3 +1,5 @@
+/* FONT FACE */
+
 @font-face {
     font-family: 'MedievalSharp-Regular';
     src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf) format('truetype');
@@ -8,3 +10,207 @@
     src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "Gothic-Bold";
+    src: url(../fonts/Gothic_A1/GothicA1-Bold.ttf) format('truetype');
+}
+
+/* ELEMENT */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/smoke-bg.jpg);
+    background-attachment: fixed;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #fbcea0;
+}
+
+/*CLASSES UTILITAIRES*/
+
+.gothic-regular {
+    font-family: "Gothic-Regular", sans-serif;
+}
+
+.medieval-regular {
+    font-family: "MedievalSharp-Regular", sans-serif;
+}
+
+.gothic-bold {
+    font-family: "Gothic-Bold", sans-serif;
+}
+
+.color-accent {
+    color: #fbcea0;
+}
+
+.color-text {
+    color: #fff;
+}
+
+.color-dark {
+    color: #000
+}
+
+.btn {
+    border: solid 1px #fbcea0;
+    background-color: #fbcea0;
+    padding: 1em 1.5em;
+    border-radius: 0.6em;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+
+.header {
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    padding: 1em 0em 0em 2em;
+    height: 125px;
+}
+
+.header__list {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+.header__link--cta {
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.header__link--cta:hover {
+    background-color: #0b0d1579;
+    color: #fff;
+}
+
+.header__nav-list,
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header__nav-item,
+.header__item {
+    position: relative;
+}
+
+.header__nav-link,
+.header__link {
+    font-family: var(--ff-medieval, 'MedievalSharp-Regular');
+    font-size: 1.1rem;
+    letter-spacing: 0.03125rem;
+    position: relative;
+    padding: 1em 1.2em;
+}
+
+.hero__btn,
+.btn__hero,
+.btn__hero a,
+.btn.btn__hero {
+    background-color: #0d0f1579;
+    backdrop-filter: blur(20px);
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    color: #fff;
+    border: 1px solid var(--color-accent, #fbcea0);
+    border-radius: 0.6em;
+    display: inline-block;
+}
+
+.btn__hero:hover,
+.hero__btn:hover {
+    background-color: var(--color-accent, #fbcea0);
+    color: #000;
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+.hero__content {
+    position: absolute;
+    text-align: center;
+}
+
+.btn__hero {
+    background-color: #0d0f1579;
+    backdrop-filter: blur(20px);
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.btn__hero:hover {
+    background-color: #fbcea0;
+    color: #000;
+}
+
+.hero__button--container {
+    padding: 15px 20px;
+    margin-bottom: 50px;
+}
+
+.hero__button--container h1 {
+    font-size: 3em;
+}
+
+.hero__button--container a {
+    font-size: 2em;
+}
