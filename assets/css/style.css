@@ -61,40 +61,6 @@ body {
 
 /* classe utilitaire */
 
-.flex {
-    display: flex;
-}
-
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.align-start {
-    align-items: flex-start;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
 
 .gap-2 {
     gap: 2rem;
@@ -130,10 +96,6 @@ body {
 
 .p-05 {
     padding: 0.5rem;
-}
-
-.fs-1 {
-    font-size: 1rem;
 }
 
 .fs-15 {
@@ -197,16 +159,19 @@ body {
 .header__list {
     display: flex;
     gap: 1.5rem;
-    font-size: 1rem;
 
 }
 
 .header__link--cta {
     font-weight: 700;
     transition: all 0.3s ease;
+    background-color: var(--color-accent, #fbcea0);
+    color: #000;
+    border-radius: 0.5rem;
 }
 
 .header__link--cta:hover {
+    border: solid 1px #fbcea0;
     background-color: #0b0d1579;
     color: #fff;
 }
@@ -223,12 +188,13 @@ body {
 .header__nav-item,
 .header__item {
     position: relative;
+
 }
 
 .header__nav-link,
 .header__link {
     font-family: var(--ff-medieval, 'MedievalSharp-Regular');
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.03125rem;
     position: relative;
     padding: 1em 1.2em;
@@ -236,9 +202,7 @@ body {
 }
 
 .hero__btn,
-.btn__hero,
-.btn__hero a,
-.btn.btn__hero {
+.btn {
     background-color: #0d0f1579;
     backdrop-filter: blur(20px);
     margin-bottom: 50px;
@@ -250,7 +214,6 @@ body {
     font-weight: 700;
     border: 1px solid var(--color-accent);
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 
 .btn__hero:hover,
@@ -354,8 +317,6 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
-    position: relative;
-    z-index: 1;
     border: 0.125rem solid var(--color-accent);
     border-radius: var(--radius-lg);
     padding: 3rem 4rem;
@@ -366,16 +327,9 @@ body {
     flex-wrap: nowrap;
 }
 
-.award__titlebox {
-    flex-shrink: 0;
-    min-width: 12.5rem;
-}
-
 .award__subtitle {
     font-family: var(--ff-gothic), sans-serif;
-    letter-spacing: 0.125rem;
     margin: 0 0 0.5rem 0;
-    font-weight: 500;
     color: var(--color-text);
 }
 
@@ -383,17 +337,11 @@ body {
     font-size: 3rem;
     font-weight: 700;
     margin: 0;
-    letter-spacing: 0.1875rem;
-    line-height: 1;
 }
 
 .award__list {
+    display: flex;
     flex-wrap: nowrap;
-}
-
-.award__item {
-    flex: 1 1 0;
-    min-width: 0;
 }
 
 .award__img {
@@ -406,13 +354,16 @@ body {
 /* section game races */
 
 .races {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin: 3em 0em;
 }
 
 .race__title {
     margin: 0;
     font-weight: 400;
-    letter-spacing: 0.1875rem;
 }
 
 .race__title-container {
@@ -450,10 +401,12 @@ body {
 }
 
 .race__item {
-    padding: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.94rem;
     flex: 0 0 calc(33.333% - 1.25rem);
     border: 2px solid transparent;
-    cursor: pointer;
 }
 
 .race__item:hover {
@@ -468,11 +421,8 @@ body {
 }
 
 .race__name {
-    font-size: 1rem;
     color: var(--color-text);
     text-align: center;
-    font-weight: 300;
-    letter-spacing: 0.0625rem;
 }
 
 .race__item:hover .race__name {
@@ -480,13 +430,18 @@ body {
 }
 
 .race__right {
+    display: flex;
+    justify-content: center;
     border: 0.0625rem solid var(--color-accent);
     border-radius: var(--radius-md);
     padding: 3.75rem 3.125rem;
 }
 
 .race__detail {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     max-width: 40.625rem;
     padding-bottom: 3em;
     border-bottom: 0.125rem solid var(--color-accent);
@@ -526,7 +481,6 @@ body {
 
 .race__detail-text {
     font-family: var(--ff-gothic), sans-serif;
-    font-size: 1rem;
     line-height: 1.9;
     color: var(--color-accent);
     font-weight: 300;
@@ -548,7 +502,12 @@ body {
     padding: 4em 10em;
 }
 
-
+.buy__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .buy__title {
     font-weight: 700;
@@ -808,7 +767,6 @@ body {
 
 .download__text {
     font-family: var(--ff-gothic);
-    font-size: 1rem;
     color: var(--color-text);
     line-height: 1.6;
     margin-bottom: 1.8em;
@@ -885,7 +843,6 @@ body {
 }
 
 .footer__col-title {
-    font-size: 1rem;
     letter-spacing: 0.5px;
     margin-bottom: 1rem;
     color: var(--color-accent);
