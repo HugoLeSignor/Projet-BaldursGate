@@ -10,11 +10,12 @@
     src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf) format('truetype');
 }
 
-<<<<<<< HEAD
+
 @font-face {
     font-family: "Gothic-Bold";
     src: url(../fonts/Gothic_A1/GothicA1-Bold.ttf) format('truetype');
-=======
+}
+
 :root {
     --color-accent: #fbcea0;
     --color-accent-weak: rgba(22, 26, 44, 0.47);
@@ -27,7 +28,6 @@
 
     --ff-medieval: 'MedievalSharp-Regular', sans-serif;
     --ff-gothic: 'Gothic-Regular', sans-serif;
->>>>>>> parent of d36d153 (some css and html changes)
 }
 
 /* ELEMENT */
@@ -36,72 +36,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-body {
-    margin: 0;
-    background-image: url(../img/smoke-bg.jpg);
-    background-attachment: fixed;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    color: #fff;
-}
-
-h2 {
-    font-size: 2.5rem;
-    color: #fbcea0;
-}
-
-/*CLASSES UTILITAIRES*/
-
-.gothic-regular {
-    font-family: "Gothic-Regular", sans-serif;
-}
-
-.medieval-regular {
-    font-family: "MedievalSharp-Regular", sans-serif;
-}
-
-.gothic-bold {
-    font-family: "Gothic-Bold", sans-serif;
-}
-
-.color-accent {
-    color: #fbcea0;
-}
-
-.color-text {
-    color: #fff;
-}
-
-.color-dark {
-    color: #000
-}
-
-.btn {
-    border: solid 1px #fbcea0;
-    background-color: #fbcea0;
-    padding: 1em 1.5em;
-    border-radius: 0.6em;
-}
-
-.container {
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* HEADER */
-=======
 *::before,
 *::after {
     box-sizing: inherit;
@@ -239,7 +173,6 @@ body {
 }
 
 /* section header */
->>>>>>> parent of d36d153 (some css and html changes)
 
 .header {
     top: 0;
@@ -310,14 +243,10 @@ body {
     color: #fff;
     border: 1px solid var(--color-accent, #fbcea0);
     border-radius: 0.6em;
-<<<<<<< HEAD
-    display: inline-block;
-=======
     font-weight: 700;
     border: 1px solid var(--color-accent);
     transition: all 0.3s ease;
     cursor: pointer;
->>>>>>> parent of d36d153 (some css and html changes)
 }
 
 .btn__hero:hover,
@@ -326,10 +255,6 @@ body {
     color: #000;
 }
 
-<<<<<<< HEAD
-/* HERO */
-
-=======
 /* Menu burger */
 .header__burger {
     display: none;
@@ -363,7 +288,6 @@ body {
 
 /* section hero  */
 
->>>>>>> parent of d36d153 (some css and html changes)
 .hero {
     height: 100vh;
     width: 100%;
@@ -372,10 +296,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-<<<<<<< HEAD
-=======
     border-bottom: solid 0.25rem var(--color-accent-weak);
->>>>>>> parent of d36d153 (some css and html changes)
 }
 
 .hero__video {
@@ -387,36 +308,6 @@ body {
 
 .hero__content {
     position: absolute;
-<<<<<<< HEAD
-    text-align: center;
-}
-
-.btn__hero {
-    background-color: #0d0f1579;
-    backdrop-filter: blur(20px);
-    margin-bottom: 50px;
-    padding: 15px 20px;
-    transition: all 0.3s ease;
-    color: #fff;
-}
-
-.btn__hero:hover {
-    background-color: #fbcea0;
-    color: #000;
-}
-
-.hero__button--container {
-    padding: 15px 20px;
-    margin-bottom: 50px;
-}
-
-.hero__button--container h1 {
-    font-size: 3em;
-}
-
-.hero__button--container a {
-    font-size: 2em;
-=======
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1033,5 +924,5 @@ body {
     color: var(--color-text);
     font-size: 0.85rem;
     text-decoration: none;
->>>>>>> parent of d36d153 (some css and html changes)
+
 }
